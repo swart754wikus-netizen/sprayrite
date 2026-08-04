@@ -274,7 +274,7 @@ nav.scrolled {
 .hero-video-wrap {
   position: absolute; inset: 0; z-index: 0;
   overflow: hidden;
-  background: var(--navy3) center / cover no-repeat;
+  background: url('/hero-poster.jpg') center / cover no-repeat, var(--navy3);
 }
 .hero-video-wrap video {
   position: absolute; inset: 0;
