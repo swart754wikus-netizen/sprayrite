@@ -1,10 +1,17 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import { FactoryIcon, WrenchIcon, PackageIcon } from "@/components/icons";
 
 export default function HomePage() {
   return (
     <div>
       <section className="hero">
+        <div className="hero-video-wrap">
+          <video autoPlay muted loop playsInline poster="/hero-poster.jpg">
+            <source src="/hero.webm" type="video/webm" />
+            <source src="/hero.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div className="hero-orb"></div>
         <div className="hero-inner">
           <div className="hero-left">
@@ -97,7 +104,9 @@ export default function HomePage() {
 
       <div className="services-strip">
         <Link className="srv-card reveal" href="/products">
-          <span className="srv-icon">🏭</span>
+          <span className="icon-badge">
+            <FactoryIcon size={26} />
+          </span>
           <div className="srv-title">Manufacturing</div>
           <div className="srv-text">
             Custom-built spray machines designed for specific crops, tree sizes and conditions.
@@ -105,7 +114,9 @@ export default function HomePage() {
           </div>
         </Link>
         <Link className="srv-card reveal reveal-d1" href="/products">
-          <span className="srv-icon">🔧</span>
+          <span className="icon-badge">
+            <WrenchIcon size={26} />
+          </span>
           <div className="srv-title">Servicing &amp; Repairs</div>
           <div className="srv-text">
             On-site and workshop servicing, calibration, and genuine parts supply for all
@@ -113,7 +124,9 @@ export default function HomePage() {
           </div>
         </Link>
         <Link className="srv-card reveal reveal-d2" href="/products">
-          <span className="srv-icon">📦</span>
+          <span className="icon-badge">
+            <PackageIcon size={26} />
+          </span>
           <div className="srv-title">Parts &amp; Accessories</div>
           <div className="srv-text">
             Pumps, nozzles, regulators, filters, PVC picking bags, Pulprite hammer pulper and

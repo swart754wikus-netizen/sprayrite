@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { MACHINES } from "./machines-data";
+import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 export default function MachinesClient() {
   const [activeId, setActiveId] = useState(MACHINES[0].id);
@@ -23,6 +24,11 @@ export default function MachinesClient() {
       </div>
       <div className="machine-detail-panel">
         <div className="mdp active" key={active.id}>
+          <PhotoPlaceholder
+            tone="light"
+            label={`${active.name} — photo coming soon`}
+            className="mdp-photo"
+          />
           <div className="mdp-tag">{active.tag}</div>
           <h3>{active.name}</h3>
           <p className="mdp-lead">{active.lead}</p>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import { WheatIcon, ShieldCheckIcon, SupportIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "About – Sprayrite",
@@ -63,7 +64,9 @@ export default function AboutPage() {
         </div>
         <div className="values-grid">
           <div className="val-card reveal">
-            <span className="val-icon">🌾</span>
+            <span className="icon-badge">
+              <WheatIcon size={26} />
+            </span>
             <h3>Farmer First</h3>
             <p>
               Every design decision starts with the farmer. How they work, what breaks, what
@@ -71,7 +74,9 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="val-card reveal reveal-d1">
-            <span className="val-icon">🔩</span>
+            <span className="icon-badge">
+              <ShieldCheckIcon size={26} />
+            </span>
             <h3>Built to Last</h3>
             <p>
               Stainless steel aerofoils. Ceramic nozzles. Fiberglass fans. We use materials that
@@ -79,7 +84,9 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="val-card reveal reveal-d2">
-            <span className="val-icon">🤝</span>
+            <span className="icon-badge">
+              <SupportIcon size={26} />
+            </span>
             <h3>After-Sale Commitment</h3>
             <p>
               The sale is the beginning, not the end. Warranty support, parts availability, and

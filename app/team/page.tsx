@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 export const metadata: Metadata = {
   title: "Our Team – Sprayrite",
@@ -42,6 +43,7 @@ export default function TeamPage() {
           {TEAM.map((member, i) => (
             <div className={`team-card reveal${i ? ` reveal-d${i}` : ""}`} key={member.name}>
               <div className="team-card-top">
+                <PhotoPlaceholder tone="dark" style={{ height: "100%" }} />
                 <div className="team-monogram">{member.initials}</div>
               </div>
               <div className="team-card-body">
