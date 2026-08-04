@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { WHATSAPP_URL } from "./WhatsAppFloat";
@@ -34,7 +35,9 @@ export default function Nav() {
     <>
       <nav className={scrolled ? "scrolled" : ""}>
         <Link className="nav-brand" href="/">
-          <div className="nav-s">S</div>
+          <div className="nav-s">
+            <Image src="/logo-icon.png" alt="Sprayrite" width={32} height={30} priority />
+          </div>
           <div>
             <span className="nav-brand-name">Sprayrite</span>
             <span className="nav-brand-sub">Die Spuit, Vir Die Boer</span>
