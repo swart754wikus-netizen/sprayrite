@@ -40,6 +40,7 @@ const PRODUCTS = [
     name: "Pulprite Hammer Pulper",
     desc: "The Pulprite is a purpose-built hammer pulper for on-farm organic material processing — tough, simple, and built by the same hands as our sprayers.",
     chip: "Ancillary Equipment",
+    image: "/products/pulprite.jpg",
   },
   {
     Icon: BagIcon,
@@ -94,9 +95,14 @@ export default function ProductsPage() {
           </div>
           {PRODUCTS.map((p, i) => (
             <div className={`prod-card reveal${i % 3 ? ` reveal-d${i % 3}` : ""}`} key={p.name}>
-              <span className="icon-badge icon-badge-sm">
-                <p.Icon size={22} />
-              </span>
+              {p.image ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img className="prod-photo" src={p.image} alt={p.name} />
+              ) : (
+                <span className="icon-badge icon-badge-sm">
+                  <p.Icon size={22} />
+                </span>
+              )}
               <div className="prod-name">{p.name}</div>
               <div className="prod-desc">{p.desc}</div>
               <span className="prod-chip">{p.chip}</span>
