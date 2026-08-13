@@ -146,6 +146,21 @@ export default function HomePage() {
         </Link>
       </div>
 
+      <div className="testimonial-section">
+        <div className="sh reveal" style={{ textAlign: "center", marginBottom: 40 }}>
+          <span className="eyebrow">What Farmers Say</span>
+          <h2 className="display">Hear It From the Field</h2>
+        </div>
+        <div className="video-embed-wrap reveal reveal-d1">
+          <iframe
+            src="https://www.youtube.com/embed/c9EMHK1_XQY"
+            title="Sprayrite customer testimonial"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
