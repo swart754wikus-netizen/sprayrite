@@ -65,6 +65,7 @@ const PRODUCTS = [
     name: "Pruning Equipment",
     desc: "All pruning equipment for the orchard — from hand pruners to heavy-duty pruning tools. Everything you need to keep your trees in shape between spray seasons.",
     chip: "Pruning & Orchard Tools",
+    image: "/products/pruning.jpg",
   },
 ];
 

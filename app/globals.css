@@ -896,11 +896,6 @@ nav.scrolled {
   line-height: 1.75; margin-top: 14px; max-width: 520px;
 }
 .map-wrap { position: relative; width: 100%; background: #1a2a1a; overflow: hidden; }
-.map-wrap img { width: 100%; display: block; opacity: 0.9; }
-
-@keyframes pulse {
-  0%,100% { opacity: 1; } 50% { opacity: 0.3; }
-}
 
 /* WhatsApp float */
 .wa-float {

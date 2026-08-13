@@ -108,45 +108,16 @@ export default function ContactPage() {
       </div>
 
       <div className="map-wrap">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/map.jpg" alt="Map of Sprayrite's coverage area in Southern Africa" />
-        <svg
-          viewBox="0 0 890 839"
-          preserveAspectRatio="xMidYMid meet"
-          style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none" }}
-        >
-          <defs>
-            <filter id="shadow">
-              <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="rgba(0,0,0,0.6)" />
-            </filter>
-          </defs>
-          <circle cx="718" cy="218" r="30" fill="rgba(232,119,34,0.15)" style={{ animation: "pulse 2s ease-in-out infinite" }} />
-          <circle cx="718" cy="218" r="13" fill="#E87722" stroke="white" strokeWidth="3" filter="url(#shadow)" />
-          <circle cx="718" cy="218" r="5" fill="white" />
-          <rect x="730" y="196" width="160" height="34" rx="3" fill="rgba(0,0,0,0.85)" />
-          <text x="732" y="212" fill="white" fontSize="13" fontFamily="Barlow,sans-serif" fontWeight="700">
-            Sprayrite HQ ★
-          </text>
-          <text x="732" y="226" fill="rgba(255,255,255,0.55)" fontSize="10" fontFamily="Barlow,sans-serif">
-            Letsitele, Limpopo
-          </text>
-        </svg>
-        <div
-          style={{
-            position: "absolute",
-            bottom: 20,
-            left: 20,
-            background: "rgba(0,0,0,0.8)",
-            padding: "14px 18px",
-            borderRadius: 3,
-            borderLeft: "3px solid #E87722",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: 10, fontSize: 13, color: "rgba(255,255,255,0.9)", fontWeight: 600 }}>
-            <div style={{ width: 12, height: 12, borderRadius: "50%", background: "#E87722", border: "2px solid white", flexShrink: 0 }}></div>
-            Sprayrite HQ — Letsitele, Limpopo
-          </div>
-        </div>
+        <iframe
+          src="https://www.google.com/maps?q=Sprayrite,+Navel+%26+Valencia+Street,+Letsitele,+Limpopo,+0885,+South+Africa&output=embed"
+          width="100%"
+          height="480"
+          style={{ border: 0, display: "block" }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Sprayrite location on Google Maps"
+        />
       </div>
 
       <Footer variant="facebook" />
