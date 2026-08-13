@@ -24,11 +24,26 @@ export default function MachinesClient() {
       </div>
       <div className="machine-detail-panel">
         <div className="mdp active" key={active.id}>
-          <PhotoPlaceholder
-            tone="light"
-            label={`${active.name} — photo coming soon`}
-            className="mdp-photo"
-          />
+          {active.video ? (
+            <video
+              className="mdp-photo"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster={active.image}
+              src={active.video}
+            />
+          ) : active.image ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img className="mdp-photo" src={active.image} alt={active.name} />
+          ) : (
+            <PhotoPlaceholder
+              tone="light"
+              label={`${active.name} — photo coming soon`}
+              className="mdp-photo"
+            />
+          )}
           <div className="mdp-tag">{active.tag}</div>
           <h3>{active.name}</h3>
           <p className="mdp-lead">{active.lead}</p>

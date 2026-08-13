@@ -613,8 +613,12 @@ nav.scrolled {
 }
 .mdp-photo {
   height: 260px;
+  width: 100%;
   margin-bottom: 28px;
   border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  background: var(--offwhite);
 }
 .mdp-tag {
   display: inline-block; background: var(--orange); color: var(--white);

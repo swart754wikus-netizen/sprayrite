@@ -7,6 +7,8 @@ export type Machine = {
   lead: string;
   specs: { label: string; val: string }[];
   features: string[];
+  image?: string;
+  video?: string;
 };
 
 export const MACHINES: Machine[] = [
@@ -32,6 +34,8 @@ export const MACHINES: Machine[] = [
       "Ceramic nozzles deliver significantly longer service life than standard",
       "Compatible with Jacto JP150 or JP300 pump",
     ],
+    image: "/machines/bateleur.jpg",
+    video: "/hero.mp4",
   },
   {
     id: "superspray3000",
@@ -52,6 +56,8 @@ export const MACHINES: Machine[] = [
       "Upgradeable: if trees outgrow the Mfana, simply add a Superspray boom",
       "Proven across South African citrus and subtropical farms",
     ],
+    image: "/machines/superspray.jpg",
+    video: "/machines/superspray.mp4",
   },
   {
     id: "superspray2000",
@@ -92,6 +98,7 @@ export const MACHINES: Machine[] = [
       "Booms oscillate to penetrate inside the tree for thorough coverage",
       "Available in 2000L or 3000L tank configurations",
     ],
+    image: "/machines/macadamia.jpg",
   },
   {
     id: "mfana",
@@ -111,6 +118,8 @@ export const MACHINES: Machine[] = [
       "Designed specifically for newly established orchards",
       "Smart investment: when trees mature, upgrade to a Superspray boom instead of buying a whole new machine",
     ],
+    image: "/machines/mfana.jpg",
+    video: "/machines/mfana.mp4",
   },
   {
     id: "kiwi",
