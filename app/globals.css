@@ -612,13 +612,13 @@ nav.scrolled {
   to   { opacity: 1; transform: none; }
 }
 .mdp-photo {
-  height: 260px;
+  height: 340px;
   width: 100%;
   margin-bottom: 28px;
   border-radius: 10px;
   display: block;
-  object-fit: cover;
-  background: var(--offwhite);
+  object-fit: contain;
+  background: var(--charcoal);
 }
 .mdp-tag {
   display: inline-block; background: var(--orange); color: var(--white);
